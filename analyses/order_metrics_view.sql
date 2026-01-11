@@ -1,6 +1,5 @@
 -- create the "main" view of order level order information/stats, for other analyses to be run from
 
---Available tables: order_items, payments, orders, customers, products, sellers
 
 --Get all relevent order-level information all in one place
     /*1. collapse payments to be order-level: some orders were paid in multiple payments */
@@ -19,8 +18,6 @@ WITH orders_cost AS(
 )   SELECT order_id, coc.customer_id, customer_unique_id, order_amount, customer_state, order_purchase_timestamp,
         order_quarter
     FROM customer_order_costs coc
-    LEFT JOIN customers cu on coc.customer_id = cu.customer_id
-
-SELECT count(*) from order_info
+    LEFT JOIN customers cu ON coc.customer_id = cu.customer_id
 
 
