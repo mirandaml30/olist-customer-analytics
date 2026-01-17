@@ -114,7 +114,7 @@ While the average number of orders per quartile was relatively similar, revenue 
 
 Only **3.12% of customers** were repeat customers (customers who placed more than one order), representing **2,997 customers**.
 
-- The average number of orders per customer across the dataset was **2.12**.
+- The average number of orders per repeat customer was **2.12**.
 - Repeat customers spent slightly less per order on average (R$148.50) than non-repeat customers (R$161.82), though this comparison is less meaningful due to the highly imbalanced customer distribution.
 - Repeat customers had an average active period of **87.31 days** between their first and last purchase.
 
